@@ -1,0 +1,68 @@
+.main {
+    background: #68a4ca;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px
+}
+
+input {
+    width: 70%;
+    margin-top: 10px;
+    padding: 9px;
+    background: rgb(209, 207, 207);
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: border-color 0.5s ease-in-out
+}
+
+input:focus {
+    border: 3px solid #68A4CA;
+    outline: none;
+    animation: pulse 1s infinite
+}
+
+@keyframes pulse {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: grey
+    }
+
+    100% {
+        border-color: white
+    }
+}
+
+button {
+    padding: 10px;
+    background: #68A4CA;
+    color: white;
+    border: 1px solid white;
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .pass {
+        margin-left: 40px;
+    }
+}

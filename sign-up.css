@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main {
+    background: rgb(209, 207, 207);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.sign-in {
+    background: white;
+    border-radius: 15px;
+    height: 95vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    right: 0;
+    transition: left 0.5s ease-in-out;
+}
+
+.sign-up {
+    background: #68A4CA;
+    border-radius: 15px 200px 200px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    flex-direction: column;
+    position: absolute;
+    height: 95vh;
+    color: white;
+    gap: 20px;
+}
+
+.text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    text-align: right;
+}
+
+.text-wrapper span {
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    border: none;
+    width: 150%;
+    padding: 9px;
+    background: rgb(209, 207, 207);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border-color 0.5s ease-in-out
+}
+
+input:focus {
+    border: 3px solid #68A4CA;
+    outline: none;
+    animation: pulse 1s infinite
+}
+
+@keyframes pulse {
+    0% {
+        border-color: #68A4CA;
+    }
+
+    50% {
+        border-color: grey
+    }
+
+    100% {
+        border-color: #68A4CA
+    }
+}
+
+.social {
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    border: 1px solid none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    color: #666
+}
+
+button {
+    padding: 10px;
+    background: #68A4CA;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 10px
+}
+
+.sgn-up {
+    padding: 10px;
+    background: #68A4CA;
+    color: white;
+    border: 1px solid white;
+    width: 22%;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .sign-in {
+        height: 100vh;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .sign-up {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 40%;
+        border-radius: 0;
+        gap: 10px;
+        border-radius: 15px 200px 15px 200px;
+
+    }
+
+    .text-wrapper {
+        margin-top: 400px;
+        margin-right: 150px;
+        font-size: 15px;
+        position: fixed
+    }
+
+}
