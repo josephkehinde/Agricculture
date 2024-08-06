@@ -22,20 +22,24 @@
                         <a href="#" class="social"><i class="fa-brands fa-linkedin-in"></i></i></a>
                     </div>
                     <p>or use your email for registration</p>
-                    <input type="text" name="txt" placeholder="Company Name" required />
+                    <!-- <input type="text" name="txt" placeholder="Company Name" required /> -->
                     <input type="email" name="email" placeholder=" Company Email" required />
-                    <input type="number" name="no" placeholder=" Company Phone Number" required />
-                    <input type="text" name="text" placeholder="Company Address" required />
+                    <!-- <input type="number" name="no" placeholder=" Company Phone Number" required />
+                    <input type="text" name="text" placeholder="Company Address" required /> -->
                     <input type="password" pattern="(?=.*[A-Z]).{8,}" name="pwd" placeholder="Password" id="password"
                         required />
                     <div id="pwd-error"></div>
-                    <button><a href="modal.html">Sign Up</a></button>
+                    <input type="password" pattern="(?=.*[A-Z]).{8,}" name="pwd" placeholder="confirm Password" id="password"
+                        required />
+                    <div id="pwd-error"></div>
+                    
+                    <button onclick="window.location.href='new.html'">Next</a></button>
                 </span>
             </div>
             <div class="sign-up">
                 <h2>Welcome Back!</h2>
                 <p>Enter your personal details to use all features</p>
-                <button class="sgn-up"><a href="sign_in.html">SIGN IN</a></button>
+                <button class="sgn-up" onclick="window.location.href='sign_in.html'">SIGN IN</a></button>
             </div>
         </div>
         <script type="text/javascript">

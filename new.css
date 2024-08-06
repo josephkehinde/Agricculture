@@ -1,11 +1,12 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
   }
   
   .container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #ffffff;
@@ -19,30 +20,37 @@ body {
   }
   
   h2 {
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
-  p {
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #333333;
+  h3 {
+    margin-bottom: 10px;
   }
   
   label {
     margin: 10px 0 5px;
     font-weight: bold;
-    font-size: 14px;
   }
   
-  input[type="email"] {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="number"],
+  textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
   }
   
   button[type="submit"] {
@@ -56,7 +64,11 @@ body {
   }
   
   button[type="submit"]:hover {
-    background-color: #333;
+    background-color: #68A4CA;
+  }
+  
+  section {
+    margin-bottom: 20px;
   }
   
   @media (max-width: 600px) {
@@ -64,7 +76,13 @@ body {
       padding: 10px;
     }
   
-    input[type="email"] {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    textarea {
       padding: 8px;
     }
   
@@ -72,5 +90,5 @@ body {
       padding: 8px;
       font-size: 14px;
     }
-  }
+}
   

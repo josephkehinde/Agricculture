@@ -65,13 +65,13 @@ input {
     background: rgb(209, 207, 207);
     border-radius: 6px;
     cursor: pointer;
-    transition: border-color 0.5s ease-in-out
+    transition: border-color 0.5s ease-in-out;
 }
 
 input:focus {
     border: 3px solid #68A4CA;
     outline: none;
-    animation: pulse 1s infinite
+    animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
@@ -80,11 +80,11 @@ input:focus {
     }
 
     50% {
-        border-color: grey
+        border-color: grey;
     }
 
     100% {
-        border-color: #68A4CA
+        border-color: #68A4CA;
     }
 }
 
@@ -100,7 +100,13 @@ input:focus {
     text-align: center;
     line-height: 20px;
     font-size: 20px;
-    color: #666
+    color: #666;
+}
+
+button {
+    border: none;
+    width: 100%;
+    border-radius: 10px;
 }
 
 button {
@@ -108,8 +114,13 @@ button {
     background: #68A4CA;
     color: white;
     border: none;
-    width: 100%;
-    border-radius: 10px
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#sign-up-btn:hover{
+    background-color: #333;
 }
 
 .sgn-up {
@@ -121,11 +132,34 @@ button {
     border-radius: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: white
+.sgn-up.disabled {
+    background: grey;
+    cursor: not-allowed;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.code-container {
+    display: flex;
+    gap: 10px;
+}
+
+.code-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.code-input:focus {
+    border-color: #68A4CA;
+    outline: none;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .sign-in {
@@ -134,7 +168,7 @@ a {
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center
+        align-items: center;
     }
 
     .sign-up {
@@ -145,14 +179,12 @@ a {
         border-radius: 0;
         gap: 10px;
         border-radius: 15px 200px 15px 200px;
-
     }
 
     .text-wrapper {
         margin-top: 400px;
         margin-right: 150px;
         font-size: 15px;
-        position: fixed
+        position: fixed;
     }
-
 }

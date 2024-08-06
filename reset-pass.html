@@ -4,22 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fget-pass.css" />
+    <link rel="stylesheet" href="reset-pass.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <title>SIGN IN PG</title>
 </head>
 
 <body>
-    <div class="main">
-        <div class="pass">
-            <label for="pwd">Set password
-                <input type="password" name="pwd" placeholder="Password" required />
-            </label>
-            <label for="pwd">Confirm password
-                <input type="password" name="pwd" placeholder="Password" required />
-            </label>
-            <button><a href="modal-reset.html">Reset Password</a></button>
-        </div>
+    <!-- Main Content -->
+    <div class="container">
+        <form id="reset-password-form">
+            <h2>Reset Password</h2>
+            <p>Please enter your new password.</p>
+            
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
-
 </html>

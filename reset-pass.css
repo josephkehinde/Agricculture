@@ -2,50 +2,50 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
-  }
-  
-  h2 {
+}
+
+h2 {
     text-align: left;
     margin-bottom: 10px;
     font-size: 24px;
-  }
-  
-  p {
+}
+
+p {
     margin-bottom: 20px;
     font-size: 14px;
     color: #333333;
-  }
-  
-  label {
+}
+
+label {
     margin: 10px 0 5px;
     font-weight: bold;
     font-size: 14px;
-  }
-  
-  input[type="email"] {
+}
+
+input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  button[type="submit"] {
+}
+
+button[type="submit"] {
     padding: 10px;
     background-color: #68A4CA;
     color: white;
@@ -53,24 +53,23 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-  }
-  
-  button[type="submit"]:hover {
+}
+
+button[type="submit"]:hover {
     background-color: #333;
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .container {
-      padding: 10px;
+        padding: 10px;
     }
-  
-    input[type="email"] {
-      padding: 8px;
+
+    input[type="password"] {
+        padding: 8px;
     }
-  
+
     button[type="submit"] {
-      padding: 8px;
-      font-size: 14px;
+        padding: 8px;
+        font-size: 14px;
     }
-  }
-  
+}
